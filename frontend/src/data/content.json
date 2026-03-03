@@ -1,0 +1,387 @@
+{
+    "category": [
+        "A",
+        "B",
+        "C",
+        "D"
+    ],
+    "items": [
+        {
+            "name": "Atorvastatin",
+            "desc": "Lowers cholesterol",
+            "price": 10,
+            "thumbnail": "src/assets/imgs/image1.jpg"
+        },
+        {
+            "name": "Amoxicillin",
+            "desc": "Antibiotic",
+            "price": 5,
+            "thumbnail": "src/assets/imgs/image2.jpg"
+        },
+        {
+            "name": "Metformin",
+            "desc": "Diabetes management",
+            "price": 11,
+            "thumbnail": "src/assets/imgs/image3.jpg"
+        },
+        {
+            "name": "Ibuprofen",
+            "desc": "pain relief",
+            "price": 7,
+            "thumbnail": "src/assets/imgs/image4.jpg"
+        },
+        {
+            "name": "Lisinopril",
+            "desc": "Blood pressure control",
+            "price": 12,
+            "thumbnail": "src/assets/imgs/image1.jpg"
+        },
+        {
+            "name": "Levothyroxine",
+            "desc": "Treats hypothyroidism",
+            "price": 9,
+            "thumbnail": "src/assets/imgs/image6.jpg"
+        },
+        {
+            "name": "Simvastatin",
+            "desc": "Lowers cholesterol",
+            "price": 8,
+            "thumbnail": "src/assets/imgs/image10.jpg"
+        },
+        {
+            "name": "Alprazolam",
+            "desc": "Alprazolam",
+            "price": 15,
+            "thumbnail": "src/assets/imgs/image1.jpg"
+        },
+        {
+            "name": "Amlodipine",
+            "desc": "Blood pressure control",
+            "price": 10,
+            "thumbnail": "src/assets/imgs/image2.jpg"
+        },
+        {
+            "name": "Furosemide",
+            "desc": "Diuretic for edema",
+            "price": 6,
+            "thumbnail": "src/assets/imgs/image2.jpg"
+        },
+        {
+            "name": "Omeprazole",
+            "desc": "Reduces stomach acid",
+            "price": 10,
+            "thumbnail": "src/assets/imgs/image3.jpg"
+        },
+        {
+            "name": "Tamsulosin",
+            "desc": "Treats enlarged prostate",
+            "price": 12,
+            "thumbnail": "src/assets/imgs/image3.jpg"
+        },
+        {
+            "name": "Sildenafil",
+            "desc": "Treats erectile dysfunction",
+            "price": 20,
+            "thumbnail": "src/assets/imgs/image4.jpg"
+        },
+        {
+            "name": "Citalopram",
+            "desc": "Antidepressant",
+            "price": 14,
+            "thumbnail": "src/assets/imgs/image6.jpg"
+        },
+        {
+            "name": "Ketorolac",
+            "desc": "Severe pain relief",
+            "price": 8,
+            "thumbnail": "src/assets/imgs/image1.jpg"
+        },
+        {
+            "name": "Hydrochlorothiazide",
+            "desc": "Diuretic for hypertension",
+            "price": 6,
+            "thumbnail": "src/assets/imgs/image1.jpg"
+        }
+    ],
+    "items1": [
+        {
+            "id": "PH001",
+            "title": "Nitrile Examination Gloves, Powder-Free, Box of 100",
+            "sdesc": "Blue nitrile gloves, latex-free, medium size, medical grade",
+            "ldesc": "High-quality powder-free nitrile examination gloves providing excellent barrier protection. Suitable for medical examinations, laboratory work, and general healthcare use. Non-sterile, ambidextrous, beaded cuff. Size: Medium. Box contains 100 gloves.",
+            "price": 12.50,
+            "category": "medical consumables",
+            "thumbnail": "src/assets/imgs/image1.jpg",
+            "rating": 4.7,
+            "time": "2025-11-28",
+            "reviews": [
+                {
+                    "user": "Dr. Sarah M.",
+                    "rating": 5,
+                    "review": "Best gloves we've used in the clinic. No allergies reported and great durability."
+                },
+                {
+                    "user": "Nurse James",
+                    "rating": 4,
+                    "review": "Good quality and fit. Slightly more expensive than others but worth it."
+                },
+                {
+                    "user": "Clinic Admin",
+                    "rating": 5,
+                    "review": "Fast delivery and excellent grip even when wet. Will reorder."
+                },
+                {
+                    "user": "Dr. Sarah M.",
+                    "rating": 5,
+                    "review": "Best gloves we've used in the clinic. No allergies reported and great durability."
+                },
+                {
+                    "user": "Nurse James",
+                    "rating": 4,
+                    "review": "Good quality and fit. Slightly more expensive than others but worth it."
+                },
+                {
+                    "user": "Clinic Admin",
+                    "rating": 5,
+                    "review": "Fast delivery and excellent grip even when wet. Will reorder."
+                },
+                {
+                    "user": "Dr. Sarah M.",
+                    "rating": 5,
+                    "review": "Best gloves we've used in the clinic. No allergies reported and great durability."
+                },
+                {
+                    "user": "Nurse James",
+                    "rating": 4,
+                    "review": "Good quality and fit. Slightly more expensive than others but worth it."
+                },
+                {
+                    "user": "Clinic Admin",
+                    "rating": 5,
+                    "review": "Fast delivery and excellent grip even when wet. Will reorder."
+                },
+                {
+                    "user": "Dr. Sarah M.",
+                    "rating": 5,
+                    "review": "Best gloves we've used in the clinic. No allergies reported and great durability."
+                },
+                {
+                    "user": "Nurse James",
+                    "rating": 4,
+                    "review": "Good quality and fit. Slightly more expensive than others but worth it."
+                },
+                {
+                    "user": "Clinic Admin",
+                    "rating": 5,
+                    "review": "Fast delivery and excellent grip even when wet. Will reorder."
+                },
+                {
+                    "user": "Dr. Sarah M.",
+                    "rating": 5,
+                    "review": "Best gloves we've used in the clinic. No allergies reported and great durability."
+                },
+                {
+                    "user": "Nurse James",
+                    "rating": 4,
+                    "review": "Good quality and fit. Slightly more expensive than others but worth it."
+                },
+                {
+                    "user": "Clinic Admin",
+                    "rating": 5,
+                    "review": "Fast delivery and excellent grip even when wet. Will reorder."
+                },
+                {
+                    "user": "Dr. Sarah M.",
+                    "rating": 5,
+                    "review": "Best gloves we've used in the clinic. No allergies reported and great durability."
+                },
+                {
+                    "user": "Nurse James",
+                    "rating": 4,
+                    "review": "Good quality and fit. Slightly more expensive than others but worth it."
+                },
+                {
+                    "user": "Clinic Admin",
+                    "rating": 5,
+                    "review": "Fast delivery and excellent grip even when wet. Will reorder."
+                }
+            ]
+        },
+        {
+            "id": "PH002",
+            "title": "3-Ply Disposable Face Mask, Box of 50",
+            "sdesc": "Surgical face mask with ear loops and nose clip",
+            "ldesc": "CE-certified 3-layer disposable face masks with melt-blown filter layer. Bacterial filtration efficiency ≥98%. Comfortable ear loops and adjustable nose bridge. Box of 50 individually wrapped masks.",
+            "price": 8.99,
+            "category": "medical consumables",
+            "thumbnail": "/images/products/mask-3ply.jpg",
+            "rating": 4.5,
+            "time": "2025-11-20",
+            "reviews": [
+                {
+                    "user": "Hospital Procurement",
+                    "rating": 5,
+                    "review": "Excellent filtration and very comfortable for long shifts."
+                },
+                {
+                    "user": "Dr. Ahmed K.",
+                    "rating": 4,
+                    "review": "Good masks, ear loops could be a bit stronger for larger heads."
+                }
+            ]
+        },
+        {
+            "id": "PH003",
+            "title": "Malaria Pf/Pv Rapid Test Cassette (Whole Blood)",
+            "sdesc": "Rapid diagnostic test for Malaria Plasmodium falciparum and vivax",
+            "ldesc": "One-step rapid immunochromatographic test for qualitative detection of Plasmodium falciparum (Pf) and Plasmodium vivax (Pv) antigens in whole blood. Results in 15 minutes. Sensitivity: 98.5%, Specificity: 99.2%. Pack of 25 tests.",
+            "price": 42.00,
+            "category": "rapid diagnostic tests",
+            "thumbnail": "/images/products/malaria-test.jpg",
+            "rating": 4.9,
+            "time": "2025-10-15",
+            "reviews": [
+                {
+                    "user": "NGO Field Officer",
+                    "rating": 5,
+                    "review": "Extremely reliable in rural settings. Clear results every time."
+                },
+                {
+                    "user": "Laboratory Technician",
+                    "rating": 5,
+                    "review": "Best malaria RDT we've used. Very low false positives."
+                },
+                {
+                    "user": "Dr. Lisa Chen",
+                    "rating": 5,
+                    "review": "Saved us countless hours. Highly recommended for outreach programs."
+                }
+            ]
+        },
+        {
+            "id": "PH004",
+            "title": "COVID-19 Antigen Rapid Test (Nasal Swab)",
+            "sdesc": "Fast SARS-CoV-2 antigen detection in 15 minutes",
+            "ldesc": "WHO-approved rapid antigen test for detection of SARS-CoV-2 nucleocapsid protein. Nasal swab specimen. Clinical sensitivity: 96.8%, specificity: 99.9%. Includes all materials needed. Box of 20 tests.",
+            "price": 65.00,
+            "category": "rapid diagnostic tests",
+            "thumbnail": "/images/products/covid-antigen-test.jpg",
+            "rating": 4.8,
+            "time": "2025-09-30",
+            "reviews": [
+                {
+                    "user": "School Nurse",
+                    "rating": 5,
+                    "review": "Easy to administer and very accurate. Helped us keep the school open safely."
+                },
+                {
+                    "user": "Corporate Clinic",
+                    "rating": 4,
+                    "review": "Reliable results, packaging is excellent."
+                }
+            ]
+        },
+        {
+            "id": "PH005",
+            "title": "Digital Infrared Forehead Thermometer",
+            "sdesc": "Non-contact temperature measurement with fever alarm",
+            "ldesc": "Medical-grade non-contact infrared thermometer. Measures forehead temperature in 1 second. Accuracy ±0.2°C. Fever alarm, memory for 32 readings, backlit display. Suitable for home and clinical use.",
+            "price": 38.90,
+            "category": "devices and equipments",
+            "thumbnail": "/images/products/thermometer-infrared.jpg",
+            "rating": 4.6,
+            "time": "2025-11-10",
+            "reviews": [
+                {
+                    "user": "Pediatrician Dr. Ramos",
+                    "rating": 5,
+                    "review": "Perfect for children who won't stay still. Very accurate."
+                },
+                {
+                    "user": "Home User",
+                    "rating": 4,
+                    "review": "Works well, battery lasts long. Instructions could be clearer."
+                },
+                {
+                    "user": "Clinic Manager",
+                    "rating": 5,
+                    "review": "We bought 10 units. Zero failures so far."
+                }
+            ]
+        },
+        {
+            "id": "PH006",
+            "title": "Automatic Upper Arm Blood Pressure Monitor",
+            "sdesc": "Clinically validated BP monitor with arrhythmia detection",
+            "ldesc": "Fully automatic digital blood pressure monitor with large cuff (22-42 cm). Stores 120 readings, detects irregular heartbeat. WHO hypertension classification indicator. FDA and CE approved.",
+            "price": 45.00,
+            "category": "devices and equipments",
+            "thumbnail": "/images/products/bp-monitor.jpg",
+            "rating": 4.8,
+            "time": "2025-10-25",
+            "reviews": [
+                {
+                    "user": "Cardiologist Office",
+                    "rating": 5,
+                    "review": "Consistent readings matching our professional devices."
+                },
+                {
+                    "user": "Elderly Care Home",
+                    "rating": 5,
+                    "review": "Easy for seniors to use independently."
+                }
+            ]
+        },
+        {
+            "id": "PH007",
+            "title": "Alcohol Prep Pads 70% Isopropyl, Box of 200",
+            "sdesc": "Sterile alcohol swabs for skin disinfection",
+            "ldesc": "Individually wrapped sterile alcohol prep pads saturated with 70% isopropyl alcohol. Ideal for skin preparation before injections, IV access, or minor procedures. Latex-free. Box contains 200 pads.",
+            "price": 6.50,
+            "category": "medical consumables",
+            "thumbnail": "/images/products/alcohol-pads.jpg",
+            "rating": 4.9,
+            "time": "2025-12-02",
+            "reviews": [
+                {
+                    "user": "Diabetes Clinic",
+                    "rating": 5,
+                    "review": "Perfect size and saturation. Our patients prefer these."
+                },
+                {
+                    "user": "Nurse Practitioner",
+                    "rating": 5,
+                    "review": "Best value we’ve found. Never dried out."
+                }
+            ]
+        },
+        {
+            "id": "PH008",
+            "title": "Pregnancy hCG Rapid Test Cassette (Urine)",
+            "sdesc": "Early detection pregnancy test, 99% accurate",
+            "ldesc": "One-step hCG pregnancy test cassette. Detects pregnancy as early as 7-10 days after conception. Sensitivity 25 mIU/mL. Results in 3-5 minutes. Pack of 40 tests.",
+            "price": 28.00,
+            "category": "rapid diagnostic tests",
+            "thumbnail": "/images/products/pregnancy-test.jpg",
+            "rating": 5.0,
+            "time": "2025-11-05",
+            "reviews": [
+                {
+                    "user": "Women’s Health Center",
+                    "rating": 5,
+                    "review": "Clear, strong lines even with early testing. Very reliable."
+                },
+                {
+                    "user": "Midwife Group",
+                    "rating": 5,
+                    "review": "Our go-to test for initial confirmation. Never had a false result."
+                },
+                {
+                    "user": "Family Planning NGO",
+                    "rating": 5,
+                    "review": "Excellent sensitivity and easy instructions."
+                }
+            ]
+        }
+    ]
+}

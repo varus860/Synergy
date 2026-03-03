@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    
+    <!-- Standard Console Appender for System Logs -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%clr(%d{HH:mm:ss}){faint} %clr(%-5level) %clr([%thread]){faint} %clr(%logger{0}){cyan} - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Appender for Application Logs with [APP] prefix and yellow message -->
+    <appender name="APP_CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%clr(%d{HH:mm:ss}){faint} %clr(%-5level) %clr([%thread]){faint} %clr(%logger{0}){cyan} - %clr([APP]){yellow} %clr(%msg){yellow} %n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Silence Hibernate logs below ERROR -->
+    <logger name="org.hibernate" level="ERROR"/>
+    
+    <!-- Use APP_CONSOLE for application logs -->
+    <logger name="com.synod.medihub" level="INFO" additivity="false">
+        <appender-ref ref="APP_CONSOLE"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

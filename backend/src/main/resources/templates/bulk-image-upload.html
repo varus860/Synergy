@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulk Image Upload - MediTrust</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0a6fc5;
+            --primary-dark: #085aa3;
+            --text-primary: #1a1a1a;
+            --text-secondary: #555555;
+            --bg-main: #ffffff;
+            --bg-subtle: #f0f7ff;
+            --footer-bg: #0a0f1a;
+            --success: #2e8540;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacOSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 24px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .description {
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 48px;
+            font-size: 1.1rem;
+        }
+
+        .form-container {
+            background: white;
+            padding: 32px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .upload-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            align-items: flex-end;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .upload-row:last-child {
+            border-bottom: none;
+        }
+
+        .field-group {
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        input[type="number"],
+        input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: 2px solid var(--primary);
+            border-color: transparent;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.97rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .alert {
+            padding: 16px;
+            border-radius: 6px;
+            margin-bottom: 24px;
+        }
+
+        .alert-success {
+            background-color: #e8f5e9;
+            color: var(--success);
+            border: 1px solid #c8e6c9;
+        }
+
+        .alert-danger {
+            background-color: #ffebee;
+            color: #c62828;
+            border: 1px solid #ffcdd2;
+        }
+
+        .remove-row {
+            color: #d32f2f;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            font-size: 1.2rem;
+            transition: opacity 0.2s;
+        }
+
+        .remove-row:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bulk Image Upload</h1>
+    <p class="description">Efficiently update multiple product images by entering their IDs and selecting files.</p>
+
+    <div th:if="${message}" class="alert alert-success">
+        <i class="fas fa-check-circle"></i> <span th:text="${message}"></span>
+    </div>
+
+    <div th:if="${error}" class="alert alert-danger">
+        <i class="fas fa-exclamation-circle"></i> <span th:text="${error}"></span>
+    </div>
+
+    <div class="form-container">
+        <form th:action="@{/bulk-upload}" method="post" enctype="multipart/form-data" id="uploadForm">
+            <div id="uploadRows">
+                <div class="upload-row">
+                    <div class="field-group">
+                        <label>Product ID</label>
+                        <input type="number" name="productIds" required placeholder="e.g. 101">
+                    </div>
+                    <div class="field-group">
+                        <label>Product Image</label>
+                        <input type="file" name="files" required accept="image/*">
+                    </div>
+                    <button type="button" class="remove-row" onclick="removeRow(this)" style="display: none;">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline" onclick="addRow()">
+                    <i class="fas fa-plus" style="margin-right: 8px;"></i> Add More
+                </button>
+                <button type="submit" class="btn btn-primary">
+                    Update All Images
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function addRow() {
+        const rowsContainer = document.getElementById('uploadRows');
+        const firstRow = rowsContainer.querySelector('.upload-row');
+        const newRow = firstRow.cloneNode(true);
+        
+        // Clear inputs
+        newRow.querySelector('input[type="number"]').value = '';
+        newRow.querySelector('input[type="file"]').value = '';
+        
+        // Show remove button
+        newRow.querySelector('.remove-row').style.display = 'block';
+        
+        rowsContainer.appendChild(newRow);
+    }
+
+    function removeRow(button) {
+        const row = button.closest('.upload-row');
+        row.remove();
+    }
+</script>
+
+</body>
+</html>
