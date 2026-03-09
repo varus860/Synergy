@@ -1,3 +1,5 @@
+<img width="1526" height="871" alt="image" src="https://github.com/user-attachments/assets/9233e162-5416-4c03-9cbb-1f75cf88f170" />
+
 # Synergy
 ![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB) 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff)
